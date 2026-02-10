@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:static": "node scripts/build-static.mjs",
     "framer": "unframer 630e38d9bc1c5de2 --outDir src/framer"
   },
   "dependencies": {
