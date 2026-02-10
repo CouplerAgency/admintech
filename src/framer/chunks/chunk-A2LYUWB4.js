@@ -12,7 +12,7 @@ var className = "framer-XAdu8";
 import { fontStore as fontStore2 } from "unframer";
 fontStore2.loadWebFontsFromSelectors(["GF;Barlow-600"]);
 var fonts2 = [{ family: "Barlow", moduleAsset: { localModuleIdentifier: "local-module:css/jYkXtflJ5:default", url: "https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E30-8c4FAtlT47dw.ttf" }, style: "normal", url: "https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E30-8c4FAtlT47dw.ttf", weight: "600" }];
-var css2 = ['.framer-tPSQk .framer-styles-preset-x2j49s:not(.rich-text-wrapper), .framer-tPSQk .framer-styles-preset-x2j49s.rich-text-wrapper h3 { --framer-font-family: "Barlow", sans-serif; --framer-font-size: 16px; --framer-font-style: normal; --framer-font-weight: 700; --framer-letter-spacing: 0px; --framer-line-height: 150%; --framer-paragraph-spacing: 0px; --framer-text-alignment: left; --framer-text-color: #e4a853; --framer-text-decoration: none; --framer-text-transform: none; }'];
+var css2 = ['.framer-tPSQk .framer-styles-preset-x2j49s:not(.rich-text-wrapper), .framer-tPSQk .framer-styles-preset-x2j49s.rich-text-wrapper h3 { --framer-font-family: "Barlow", sans-serif; --framer-font-size: 16px; --framer-font-style: normal; --framer-font-weight: 600; --framer-letter-spacing: 0px; --framer-line-height: 150%; --framer-paragraph-spacing: 0px; --framer-text-alignment: left; --framer-text-color: #e4a853; --framer-text-decoration: none; --framer-text-transform: none; }'];
 var className2 = "framer-tPSQk";
 
 export {

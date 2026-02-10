@@ -195,13 +195,13 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 							"--border-style": "solid",
 							"--border-top-width": "1px",
 							backgroundColor:
-								"var(--token-6d05c7e7-3db1-411c-8b7a-d2c7f93bf6a9, rgb(61, 58, 56))",
+								"var(--token-636a3fe4-9f0f-4ae1-a43c-60a743a1245b, rgb(245, 242, 238))",
 							...style,
 						}}
 						variants={{
 							SGW63zoAz: {
 								backgroundColor:
-									"var(--token-6d05c7e7-3db1-411c-8b7a-d2c7f93bf6a9, rgb(61, 58, 56))",
+									"var(--token-a7f7ae5f-a181-442b-8823-be0ca1b170fe, rgb(255, 255, 255))",
 							},
 						}}
 						{...addPropertyOverrides(
@@ -245,7 +245,6 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											data-styles-preset={"jYkXtflJ5"}
 											style={{
 												"--framer-text-alignment": "left",
-												"--framer-text-color": "rgb(255, 255, 255)",
 											}}
 										>
 											{"Fjellheimen"}
@@ -268,7 +267,6 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											data-styles-preset={"f9z7v91ro"}
 											style={{
 												"--framer-text-alignment": "left",
-												"--framer-text-color": "rgb(255, 255, 255)",
 											}}
 										>
 											{"Booke hotellet?"}
@@ -285,7 +283,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 								layoutDependency={layoutDependency}
 								layoutId={"xCO2RvPd6"}
 								svg={
-									'<svg width="442" height="4" viewBox="-1 -1 442 4" fill="none" xmlns="http://www.w3.org/2000/svg">\n<line x1="0.00112867" y1="0.500001" x2="440" y2="1.49323" stroke="#FFFFFF"/>\n</svg>\n'
+									'<svg width="442" height="4" viewBox="-1 -1 442 4" fill="none" xmlns="http://www.w3.org/2000/svg">\n<line x1="0.00112867" y1="0.500001" x2="440" y2="1.49323" stroke="#DDD9D6"/>\n</svg>\n'
 								}
 								withExternalLayout={true}
 							/>
@@ -314,7 +312,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											layoutDependency={layoutDependency}
 											layoutId={"Doh1f0GR1"}
 											style={{
-												"--extracted-r6o4lv": "rgb(255, 255, 255)",
+												"--extracted-r6o4lv": "rgb(136, 136, 136)",
 											}}
 											verticalAlignment={"top"}
 											withExternalLayout={true}
@@ -326,7 +324,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														"--framer-font-size": "12px",
 														"--framer-font-weight": "500",
 														"--framer-text-color":
-															"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+															"var(--extracted-r6o4lv, rgb(136, 136, 136))",
 													}}
 												>
 													{"Navn"}
@@ -353,10 +351,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"--framer-input-border-right-width": "1px",
 												"--framer-input-border-style": "solid",
 												"--framer-input-border-top-width": "1px",
-												"--framer-input-font-color": "rgb(61, 58, 56)",
-												"--framer-input-icon-color": "rgb(61, 58, 56)",
+												"--framer-input-font-color": "rgb(153, 153, 153)",
+												"--framer-input-icon-color": "rgb(153, 153, 153)",
 												"--framer-input-placeholder-color":
-													"rgb(61, 58, 56)",
+													"rgb(153, 153, 153)",
 											}}
 											type={"text"}
 										/>
@@ -373,7 +371,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											layoutDependency={layoutDependency}
 											layoutId={"ZCsNBMhpw"}
 											style={{
-												"--extracted-r6o4lv": "rgb(255, 255, 255)",
+												"--extracted-r6o4lv": "rgb(136, 136, 136)",
 											}}
 											verticalAlignment={"top"}
 											withExternalLayout={true}
@@ -385,7 +383,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														"--framer-font-size": "12px",
 														"--framer-font-weight": "500",
 														"--framer-text-color":
-															"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+															"var(--extracted-r6o4lv, rgb(136, 136, 136))",
 													}}
 												>
 													{"E-postadresse"}
@@ -412,10 +410,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"--framer-input-border-right-width": "1px",
 												"--framer-input-border-style": "solid",
 												"--framer-input-border-top-width": "1px",
-												"--framer-input-font-color": "rgb(61, 58, 56)",
-												"--framer-input-icon-color": "rgb(61, 58, 56)",
+												"--framer-input-font-color": "rgb(153, 153, 153)",
+												"--framer-input-icon-color": "rgb(153, 153, 153)",
 												"--framer-input-placeholder-color":
-													"rgb(61, 58, 56)",
+													"rgb(153, 153, 153)",
 											}}
 											type={"email"}
 										/>
@@ -432,7 +430,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											layoutDependency={layoutDependency}
 											layoutId={"CrlSeGtVC"}
 											style={{
-												"--extracted-r6o4lv": "rgb(255, 255, 255)",
+												"--extracted-r6o4lv": "rgb(136, 136, 136)",
 											}}
 											verticalAlignment={"top"}
 											withExternalLayout={true}
@@ -444,7 +442,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														"--framer-font-size": "12px",
 														"--framer-font-weight": "500",
 														"--framer-text-color":
-															"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+															"var(--extracted-r6o4lv, rgb(136, 136, 136))",
 													}}
 												>
 													{"Mobilnummer"}
@@ -471,10 +469,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"--framer-input-border-right-width": "1px",
 												"--framer-input-border-style": "solid",
 												"--framer-input-border-top-width": "1px",
-												"--framer-input-font-color": "rgb(61, 58, 56)",
-												"--framer-input-icon-color": "rgb(61, 58, 56)",
+												"--framer-input-font-color": "rgb(153, 153, 153)",
+												"--framer-input-icon-color": "rgb(153, 153, 153)",
 												"--framer-input-placeholder-color":
-													"rgb(61, 58, 56)",
+													"rgb(153, 153, 153)",
 											}}
 											type={"tel"}
 										/>
@@ -491,7 +489,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											layoutDependency={layoutDependency}
 											layoutId={"m4F7PFOTL"}
 											style={{
-												"--extracted-r6o4lv": "rgb(255, 255, 255)",
+												"--extracted-r6o4lv": "rgb(136, 136, 136)",
 											}}
 											verticalAlignment={"top"}
 											withExternalLayout={true}
@@ -503,7 +501,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														"--framer-font-size": "12px",
 														"--framer-font-weight": "500",
 														"--framer-text-color":
-															"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+															"var(--extracted-r6o4lv, rgb(136, 136, 136))",
 													}}
 												>
 													{"Kommentar"}
@@ -532,10 +530,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"--framer-input-border-right-width": "1px",
 												"--framer-input-border-style": "solid",
 												"--framer-input-border-top-width": "1px",
-												"--framer-input-font-color": "rgb(61, 58, 56)",
-												"--framer-input-icon-color": "rgb(61, 58, 56)",
+												"--framer-input-font-color": "rgb(153, 153, 153)",
+												"--framer-input-icon-color": "rgb(153, 153, 153)",
 												"--framer-input-placeholder-color":
-													"rgb(61, 58, 56)",
+													"rgb(153, 153, 153)",
 											}}
 											type={"textarea"}
 										/>
@@ -552,7 +550,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											layoutDependency={layoutDependency}
 											layoutId={"dVPk2aGZr"}
 											style={{
-												"--extracted-r6o4lv": "rgb(255, 255, 255)",
+												"--extracted-r6o4lv": "rgb(136, 136, 136)",
 											}}
 											verticalAlignment={"top"}
 											withExternalLayout={true}
@@ -564,7 +562,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 														"--framer-font-size": "12px",
 														"--framer-font-weight": "500",
 														"--framer-text-color":
-															"var(--extracted-r6o4lv, rgb(255, 255, 255))",
+															"var(--extracted-r6o4lv, rgb(136, 136, 136))",
 													}}
 												>
 													{"N\xE5r vil du booke?"}
@@ -591,10 +589,10 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"--framer-input-border-right-width": "1px",
 												"--framer-input-border-style": "solid",
 												"--framer-input-border-top-width": "1px",
-												"--framer-input-font-color": "rgb(61, 58, 56)",
-												"--framer-input-icon-color": "rgb(61, 58, 56)",
+												"--framer-input-font-color": "rgb(153, 153, 153)",
+												"--framer-input-icon-color": "rgb(153, 153, 153)",
 												"--framer-input-placeholder-color":
-													"rgb(61, 58, 56)",
+													"rgb(153, 153, 153)",
 											}}
 											type={"date"}
 										/>
