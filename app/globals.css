@@ -1,0 +1,222 @@
+:root {
+  color-scheme: light;
+  --color-ink: #212121;
+  --color-ink-muted: #666666;
+  --color-ink-subtle: #777777;
+  --color-paper: #ffffff;
+  --color-mist: #f8f8f8;
+  --color-faint: #f5f5f5;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-primary: #31a868;
+  --color-primary-deep: #47735c;
+  --color-accent: #0099ff;
+  --color-accent-soft: #51824e1a;
+  --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.08);
+  --shadow-tight: 0 8px 18px rgba(0, 0, 0, 0.08);
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 10px;
+  --content-max: 1100px;
+  --content-wide: 1240px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-primary), system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-paper);
+}
+
+.content {
+  flex: 1;
+}
+
+.eyebrow {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+}
+
+.display {
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+
+.headline {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin: 0 0 0.8rem;
+}
+
+.subtitle {
+  color: var(--color-ink-muted);
+  font-size: 1.05rem;
+  max-width: 640px;
+}
+
+.card {
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.6rem;
+  box-shadow: var(--shadow-tight);
+}
+
+.hero {
+  padding: 5rem 0 3.5rem;
+  background: radial-gradient(circle at top, #ffffff, #f8f8f8);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: center;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: var(--color-accent-soft);
+  color: var(--color-primary-deep);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section.alt {
+  background: var(--color-mist);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.cta {
+  background: var(--color-primary-deep);
+  color: #ffffff;
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cta .subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button.primary {
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.button.ghost {
+  border-color: var(--color-border);
+  color: var(--color-ink);
+  background: transparent;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  color: var(--color-ink-subtle);
+  font-size: 0.75rem;
+}
+
+.longform h1,
+.longform h2,
+.longform h3 {
+  margin: 2rem 0 1rem;
+}
+
+.longform p {
+  margin: 0 0 1rem;
+  color: var(--color-ink-muted);
+}
+
+.longform h1 {
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+}
+
+.longform h2 {
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+}
+
+.longform h3 {
+  font-size: 1.2rem;
+  color: var(--color-ink);
+}
+
+.link-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.2rem 1.4rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}

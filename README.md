@@ -1,33 +1,30 @@
-# AdminTech Norway (Static Rebuild)
+# AdminTech Norway (React Rebuild)
 
-Static HTML/CSS/JS rebuild of `admintech.no`, mirrored from the live site and prepared for GitHub + Railway deployment.
+Premium Next.js rebuild of `admintech.no` with the same content, pages, and color palette.
 
 ## Project Structure
 
-- `src/site/` – HTML pages for all public routes
-- `public/assets/` – downloaded assets (images, fonts, JS bundles)
-- `dist/` – build output (generated)
-- `nginx.conf` + `Dockerfile` – Railway static deployment
+- `app/` – Next.js App Router pages
+- `components/` – shared UI building blocks
+- `content/` – extracted content from the legacy site
+- `public/assets/` – images/fonts
 
-The previous Framer/Unframer Vite export remains in `src/` but is not used by the static rebuild.
-
-## Build
+## Development
 
 ```bash
-npm run build:static
+npm install
+npm run dev
 ```
 
-This copies `src/site/` and `public/` into `dist/`.
+Then open `http://localhost:3000`.
 
-## Local Preview
+## Production
 
 ```bash
-cd dist
-python3 -m http.server 5173
+npm run build
+npm run start
 ```
-
-Then visit `http://localhost:5173`.
 
 ## Railway Deploy
 
-Builds a static site and serves it with Nginx using the included `Dockerfile` and `nginx.conf`.
+Use the provided `Dockerfile` configured for Next.js.

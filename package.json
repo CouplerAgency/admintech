@@ -1,30 +1,22 @@
 {
-  "name": "unframer-vite-react-typescript-starter",
+  "name": "admintech-react-rebuild",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "stackblitz": {
-    "startCommand": "STACKBLITZ_DEMO_EXAMPLE=src/App.tsx npm run framer && npm run dev"
-  },
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:static": "node scripts/build-static.mjs",
-    "framer": "unframer 630e38d9bc1c5de2 --outDir src/framer"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "react": "latest",
-    "unframer": "latest",
-    "react-dom": "latest"
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@vitejs/plugin-react": "latest",
-    "tailwindcss": "^3.4.0",
-    "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0",
-    "typescript": "latest",
-    "vite": "latest"
+    "@types/node": "20.12.12",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "typescript": "5.5.4"
   }
 }

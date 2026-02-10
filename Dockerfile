@@ -2,14 +2,20 @@ FROM node:20-alpine AS build
 WORKDIR /app
 
 COPY package.json ./
-COPY scripts/ scripts/
-COPY src/site src/site
-COPY public public
+RUN npm install
 
-RUN npm run build:static
+COPY . .
+RUN npm run build
 
-FROM nginx:alpine
-COPY nginx.conf /etc/nginx/templates/default.conf.template
-COPY --from=build /app/dist /usr/share/nginx/html
+FROM node:20-alpine
+WORKDIR /app
+ENV NODE_ENV=production
+ENV PORT=8080
+
+COPY --from=build /app/package.json ./package.json
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/.next ./.next
+COPY --from=build /app/public ./public
 
 EXPOSE 8080
+CMD ["npm", "start"]
