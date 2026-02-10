@@ -308,7 +308,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												style: {
 													width: "100%",
 												},
-												variant: "fgAYltK0H",
+												variant: "WwIfYfpJX",
 												width: "100%",
 											})}
 										</SmartComponentScopedContainer>
