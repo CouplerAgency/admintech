@@ -223,58 +223,57 @@
 // #region agent log
 (function(){
   const endpoint='http://127.0.0.1:7242/ingest/53c987b0-d7bd-48f0-aa67-e0e8ea8150b0';
-  const runId='pre-fix-2';
+  const runId='prod-debug-2';
   function log(hypothesisId,message,data){
-    fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({runId,hypothesisId,location:location.pathname,message,data,timestamp:Date.now()})}).catch(()=>{});
+    const payload={runId,hypothesisId,location:location.pathname,message,data,timestamp:Date.now()};
+    try{
+      fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),mode:'no-cors',keepalive:true}).catch(()=>{});
+    }catch(_){
+    }
   }
   function collectNavLinks(){
-    const anchors=[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href'));
+    const anchors=[...document.querySelectorAll('a[href]')].map(a=>({href:a.getAttribute('href'),resolved:a.href}));
     return anchors.slice(0,80);
   }
   function wrapHistory(){
     const origPush=history.pushState;
     const origReplace=history.replaceState;
     history.pushState=function(state,title,url){
-      log('H2','history.pushState',{url,href:location.href,origin:location.origin,port:location.port});
+      log('H1','history.pushState',{url,href:location.href,origin:location.origin,port:location.port,host:location.host});
       return origPush.apply(this,arguments);
     };
     history.replaceState=function(state,title,url){
-      log('H2','history.replaceState',{url,href:location.href,origin:location.origin,port:location.port});
+      log('H1','history.replaceState',{url,href:location.href,origin:location.origin,port:location.port,host:location.host});
       return origReplace.apply(this,arguments);
     };
     const origAssign=window.location.assign.bind(window.location);
     const origReplaceLoc=window.location.replace.bind(window.location);
     window.location.assign=function(url){
-      log('H2','location.assign',{url,href:location.href,origin:location.origin,port:location.port});
+      log('H1','location.assign',{url,href:location.href,origin:location.origin,port:location.port,host:location.host});
       return origAssign(url);
     };
     window.location.replace=function(url){
-      log('H2','location.replace',{url,href:location.href,origin:location.origin,port:location.port});
+      log('H1','location.replace',{url,href:location.href,origin:location.origin,port:location.port,host:location.host});
       return origReplaceLoc(url);
     };
   }
-  function logServiceWorker(){
-    const hasSW = 'serviceWorker' in navigator;
-    const controller = navigator.serviceWorker && navigator.serviceWorker.controller;
-    log('H3','service_worker',{hasSW,controller:!!controller});
-  }
   window.addEventListener('DOMContentLoaded',()=>{
-    log('H1','domcontentloaded',{href:location.href,origin:location.origin,pathname:location.pathname,port:location.port,host:location.host});
-    log('H1','nav_links',{links:collectNavLinks()});
-    logServiceWorker();
+    log('H2','domcontentloaded',{href:location.href,origin:location.origin,pathname:location.pathname,port:location.port,host:location.host});
+    log('H2','nav_links',collectNavLinks());
+    log('H3','service_worker',{hasSW:'serviceWorker' in navigator,controller:!!(navigator.serviceWorker && navigator.serviceWorker.controller)});
     wrapHistory();
   });
   document.addEventListener('click',(e)=>{
     const a=e.target && e.target.closest ? e.target.closest('a[href]') : null;
     if(a){
-      log('H4','nav_click',{href:a.getAttribute('href'),resolved:a.href,origin:location.origin,port:location.port});
+      log('H4','nav_click',{href:a.getAttribute('href'),resolved:a.href,origin:location.origin,port:location.port,host:location.host});
     }
   });
   window.addEventListener('pageshow',()=>{
-    log('H4','pageshow',{href:location.href,origin:location.origin,port:location.port});
+    log('H4','pageshow',{href:location.href,origin:location.origin,port:location.port,host:location.host});
   });
   window.addEventListener('beforeunload',()=>{
-    log('H4','beforeunload',{href:location.href,origin:location.origin,port:location.port});
+    log('H4','beforeunload',{href:location.href,origin:location.origin,port:location.port,host:location.host});
   });
 })();
 // #endregion agent log
@@ -283,9 +282,13 @@
 // #region agent log
 (function(){
   const endpoint='http://127.0.0.1:7242/ingest/53c987b0-d7bd-48f0-aa67-e0e8ea8150b0';
-  const runId='prod-debug-1';
+  const runId='prod-debug-2';
   function log(hypothesisId,message,data){
-    fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({runId,hypothesisId,location:location.pathname,message,data,timestamp:Date.now()})}).catch(()=>{});
+    const payload={runId,hypothesisId,location:location.pathname,message,data,timestamp:Date.now()};
+    try{
+      fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),mode:'no-cors',keepalive:true}).catch(()=>{});
+    }catch(_){
+    }
   }
   function collectNavLinks(){
     const anchors=[...document.querySelectorAll('a[href]')].map(a=>({href:a.getAttribute('href'),resolved:a.href}));
